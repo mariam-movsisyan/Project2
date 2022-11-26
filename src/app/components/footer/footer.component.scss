@@ -1,0 +1,85 @@
+.footer{
+    width: 100%;
+    background: #0d4e7d;
+    color: #fff;
+    
+    .footer_top{
+        padding: 10px 0;
+        input{
+            width: 300px;
+            border: none;
+            color: #333;
+            padding: 10px;
+            border-radius: 1px;
+            margin-right: 0.7%;
+            border: 1px solid transparent;
+        }
+        button{
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            border-radius: 1px;
+            padding: 10px 20px;
+            font-size: 12px;
+        }
+    }
+    .footer_middle{
+        background: #0e578b;
+        .navigation{
+            li{
+                width: 12.5%;
+                list-style-type: none;
+                border-right: 1px solid rgba(255,255,255,.1);
+                border-left: 1px solid rgba(255,255,255,.1);
+                text-align: center;
+                padding: 40px 0;
+                font-weight: 600;
+                a{
+                    color: white;
+                    text-decoration: none;
+                    i{
+                        font-size: 40px;
+                        margin-bottom: 30px;
+                    }
+                    span{
+                        font-size: 13px;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .footer_bottom{
+        padding: 20px 0 40px;
+        .copyrights{
+            img{
+                width: 120px;
+            }
+        }
+        .info_block{
+            margin-top: 10px;
+            font-size: 11px;
+            a{
+                color: white;
+            }
+        }
+        .socials_payments{
+            li{
+                list-style-type: none;
+                margin-left: 15px;
+                margin-bottom: 20px;
+                a{
+                    color: white;
+                    font-size: 20px;
+                }
+            }
+            .payment_icons{
+                img{
+                    width: 40px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

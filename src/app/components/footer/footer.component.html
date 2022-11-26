@@ -1,0 +1,71 @@
+<div class="footer">
+        <div class="footer_top d-flex justify-content-flex-end">
+            <div class="container  d-flex justify-content-flex-end">
+
+                <input type="email" name="" placeholder="Your e-mail address">
+                <button>Subscribe</button>
+            </div>
+    </div>
+    <div class="footer_middle">
+        <div class="container">
+            <ul class="navigation d-flex">
+                <li *ngFor="let item of menu">
+                    <a [href]="item.href" class="d-flex  flex-direction-column">
+                        <i [class]="item.className"></i>
+                        <span>
+                            {{item.info}}
+                        </span> 
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer_bottom">
+        <div class="container d-flex justify-content-between">
+            <div class="copyrights">
+                <div>
+                    <img src="./assets/images/footer/logo_white-svg.png" alt="">
+                </div>
+                <div class="info_block">
+                    ©"ZIGZAG" LLC, 2022. All rights reserved <br>
+                    Design and development 
+                    <a href="#" target="_blank">Studio One</a> 
+                </div>
+            </div> 
+            <div class="socials_payments">
+                <ul class="d-flex">
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="payment_icons d-flex">
+                    <img src="../../../assets/images/footer/visa.svg" alt="">
+                    <img src="../../../assets/images/footer/mastercard.svg" alt="">
+                    <img src="../../../assets/images/footer/maestro.svg" alt="">
+                    <img src="../../../assets/images/footer/arca.svg" alt="">
+                    <img src="../../../assets/images/footer/idram.svg" alt="">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</div>

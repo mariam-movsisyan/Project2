@@ -1,0 +1,100 @@
+.bg-color{
+    background: linear-gradient(to bottom,#05406a,#05568d);
+    .catalog_btn{
+        display: flex;
+        align-items: center;
+        color: #fff;
+        padding: 18px 15px;
+        border: none;
+        background: rgba(0,0,0,.1);
+        position: relative;
+        margin-right: 10px;
+        font-size: 12px;
+        font-weight: 700;
+        margin-right: 2%;
+        i{
+            margin-right: 12px;
+        }
+    }
+    .catalog_btn:after{
+        content: "";
+        margin-left: 5px;
+        border-style: solid;
+        border-width: 4px 4px 0;
+        border-left-color: transparent;
+        border-right-color: transparent;
+    }
+    .short_list{
+        width: 90%;
+        li{
+            width: 10%;
+            list-style-type: none;
+            text-align: center;
+
+            .title{
+                color: white;
+                text-decoration: none;
+                font-size: 11px;
+            }
+            .title:hover{
+                opacity: .6;
+
+            }
+            img{
+                width: 100%;
+            }
+        }
+        
+        .subMenu_block_hover:hover .subMenu_block{
+            display: block;
+        }
+
+    }
+}
+.subMenu_block{
+    display: none;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.84);
+    width: 84%;
+    position: absolute;
+    right: 111px;
+    top: 187px;
+    z-index: 2;
+    text-align: left;
+    .title1{
+        color: #0e578b;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 20px;
+        margin-bottom: 15px;
+        text-decoration: none;
+        margin-bottom: 40px;
+    }
+    .title1:hover{
+        opacity: .7;
+    }
+
+    .subMenu{
+        width: 25%;
+        margin-top: 20px;
+        li{
+            width: 100%;
+            text-align: left;
+            line-height: 25px;
+            a{
+                color: black;
+                text-decoration: none;
+                font-size: 11px;
+            }
+            .category-item{
+                color: #0e578b;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 20px;
+                margin-bottom: 15px;
+                text-decoration: none;
+            }
+
+        }
+    }
+}

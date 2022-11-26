@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'project2';
+  public count: number =0;
+  public cartCount: number = 0
+  addItem(newItemCount: number){
+    this.count = newItemCount;
+    console.log(newItemCount)
+  }
+
+  addCount(item_count: number){
+    this.cartCount = item_count
+  }
 }

@@ -1,0 +1,11 @@
+<div class="container">
+    <div>
+        <ul class="d-flex images_list justify-content-between">
+            <li *ngFor="let item of list">
+                <a [href]="item.href">
+                    <img [src]="item.src" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

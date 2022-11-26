@@ -1,0 +1,44 @@
+<div class="container distance">
+    <div>
+        <div class="section_head d-flex justify-content-between align-items-end">
+            <h2 class="section_title">Hot prices</h2>
+            <a href="#" class="view_all_link">See all</a>
+        </div>
+        <div class="product_block d-flex justify-content-between">
+            <button class="slick-prev" (click)="browseListLeft()">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="block_inner" *ngFor="let product of list"  [ngStyle]="style">
+                <div class="sticker_block">
+                    <img src="./assets/images/hot_prices/hotprice_sticker_en-svg.png" alt="">
+                </div>
+                <div class="image_block">
+                    <a [href]="product.href">
+                        <img [src]="product.src" alt="">
+                    </a>
+                </div>
+                <div class="info_block">
+                    <div class="product_category">{{product.category}}</div>
+                    <div class="product_name d-flex justify-content-between align-items-end">
+                        <a [href]="product.href">        
+                            {{product.name}} 
+                        </a>
+                        <i class="fa-regular fa-heart"></i>
+
+                    </div>
+                    <div class="product_price">
+                        {{product.price}}
+                    </div>
+                </div>
+
+                <div class="btns_block d-flex justify-content-between">
+                    <button class="basket_btn">Buy</button>
+                    <button class="compare_btn">Compare</button>
+                </div>
+            </div>
+            <button class="slick-next" (click)="browseListRight()">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+</div>

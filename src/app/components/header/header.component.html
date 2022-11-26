@@ -1,0 +1,76 @@
+<header>
+    <div class="bg_color">
+        <div class="container d-flex justify-content-between">
+            <div class="header_menu_inner">
+                <ul class="website_menu d-flex">
+                    <li>
+                        <a href="#">About us</a>
+                    </li>
+                    <li>
+                        <a href="#">Stores</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Special offers</a>
+                    </li>
+                    <li>
+                        <a href="#">Gift card</a>
+                    </li>
+                    <li>
+                        <a href="#">Credit</a>
+                    </li>
+                </ul>    
+            </div>
+            <div class="actions_block d-flex justify-content-between align-items-center">
+                <div class="sign_in">
+                    <button class="drop_btn icon-lock d-flex">
+                        LOGIN
+                    </button>
+                </div>
+                <div class="language_block">
+                    <button class="drop_btn d-flex align-items-center">
+                        <img src="./assets/images/header/en-svg.png" alt="sign_in_logo">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container header_inner">
+        <div class="d-flex  align-items-center">
+            <div class="main_logo">
+                <a href="#">
+                    <img src="./assets/images/header/main_logo.png" alt="logo" class="logo_img">
+                </a>
+            </div>
+            <form action="" method="get" class="form">
+                <input type="text" name="" placeholder="enter product name" class="input_text">
+                <button type="submit" title="Search">Search</button>
+            </form>
+            <div class="phone_block d-flex">
+                <a href="tel:+374 11 900 800">+374 11 900 800</a>
+                <span class="phone_hint">Call number</span>
+            </div>
+            <div class="block d-flex align-items-center justify-content-flex-end">
+                <div class="favorite_block">
+                    <a href="#" class="favorite_btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+                </div>
+                <div class="compare_block">
+                    <a href="#" class="d-flex">
+                        <i class="fa-solid fa-scale-unbalanced-flip"></i>
+                        <span class="items_count">{{count}}</span>
+                    </a>
+                </div>
+                <div class="basket_block">
+                    <a href="#" class="d-flex">
+                        <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                        <span class="items_count1">{{countOfCart}}</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
